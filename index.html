@@ -19,11 +19,11 @@
   <div id="countdown"></div>
 
   <!-- Gift Icon Online -->
-  <div class="gift" onclick="tapGiftEarly()">
-    <img src="https://img.icons8.com/emoji/96/birthday-gift.png" class="emoji">
-    <p>Tap the Gift</p>
-  </div>
 
+<div class="gift" onclick="tapGiftEarly()">
+  <div class="giftEmoji">🎁</div>
+  <p>Tap the Gift</p>
+</div>
   <!-- Message -->
   <p id="earlyMsg" class="hidden">
     😭 Too early Caffeine...<br>
@@ -33,15 +33,13 @@
 
   <!-- Options -->
   <div id="options" class="hidden">
-    <button onclick="chooseOption(true)">
-      <img src="https://img.icons8.com/color/48/checkmark.png" class="btn-icon">
-      You talk regularly with me
-    </button>
-
-    <button onclick="chooseOption(false)">
-      <img src="https://img.icons8.com/color/48/cancel.png" class="btn-icon">
-      I couldn’t talk with you
-    </button>
+ <button onclick="chooseOption(true)">
+  ✅ You talk regularly with me
+</button>
+<button onclick="chooseOption(false)">
+  ❌ I couldn’t talk with you
+</button>
+    
   </div>
 
   <!-- Stop Message -->
