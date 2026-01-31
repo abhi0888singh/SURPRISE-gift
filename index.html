@@ -3,78 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birthday Surprise </title>
+  <title>Birthday Surprise 🎁</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ACTIVITY COUNTDOWN & TAP GIFT -->
 <div id="activityScreen" class="screen active">
-  <h1> Birthday Surprise Loading...</h1>
-  <p>Aradhya your gift unlocks on:</p>
-  <h2>6 February </h2>
+  <h1>🎂 Birthday Surprise Loading...</h1>
+  <p>Aradhya (Caffeine), your gift unlocks on:</p>
+  <h2>6 February 🎆</h2>
 
   <div id="countdown"></div>
 
-  <div class="gift" onclick="tapGiftEarly()"><p>Tap the Gift</p></div>
+  <div class="gift" onclick="tapGiftEarly()">🎁<p>Tap the Gift</p></div>
 
   <p id="earlyMsg" class="hidden">
-     Too early Caffeine...<br>
-    But you're so special that I made this ride for you <br>
+    😭 Too early Caffeine...<br>
+    But you're so special that I made this ride for you 💕<br>
     Tell me honestly...
   </p>
 
   <div id="options" class="hidden">
-    <button onclick="chooseOption(true)"> You talk regularly with me</button>
-    <button onclick="chooseOption(false)"> I couldn’t talk with you</button>
+    <button onclick="chooseOption(true)">✅ You talk regularly with me</button>
+    <button onclick="chooseOption(false)">❌ I couldn’t talk with you</button>
   </div>
 
   <p id="stopMsg" class="hidden stop">
-     Then this surprise cannot continue...<br>
-    Still, Happy Birthday in advance 
+    💔 Then this surprise cannot continue...<br>
+    Still, Happy Birthday in advance 🌸
   </p>
 </div>
 
 <!-- SURPRISE PAGES -->
 <div id="page1" class="screen">
-  <h1> Surprise #1 </h1>
-  <p>You are one in a million Aradhya </p>
-  <button onclick="nextPage()">Next Surprise </button>
+  <h1>✨ Surprise #1 ✨</h1>
+  <p>You are one in a million Aradhya ⭐</p>
+  <button onclick="nextPage()">Next Surprise ➝</button>
 </div>
 
 <div id="page2" class="screen">
-  <h1> Surprise #2 </h1>
-  <p>Guess who thinks you're really special... </p>
-  <button onclick="nextPage()">One More Clue </button>
+  <h1>🌙 Surprise #2 🌙</h1>
+  <p>Guess who thinks you're really special... ❤️</p>
+  <button onclick="nextPage()">One More Clue ➝</button>
 </div>
 
 <div id="page3" class="screen">
-  <h1> Surprise #3 </h1>
+  <h1>🎇 Surprise #3 🎇</h1>
   <p>
-    Happy Birthday in advance, Aradhya <br>
-    My favorite Caffeine <br>
+    Happy Birthday in advance, Aradhya ❤️<br>
+    My favorite Caffeine ☕✨<br>
     You bring warmth and smiles like coffee.
   </p>
-  <button onclick="nextPage()">Next </button>
+  <button onclick="nextPage()">Next ➝</button>
 </div>
 
 <div id="page4" class="screen">
-  <h1> Surprise #4 </h1>
+  <h1>💫 Surprise #4 💫</h1>
   <p>
     May your birthday be as sweet as your laughter<br>
-    and unforgettable as you are 
+    and unforgettable as you are 🌸
   </p>
-  <button onclick="nextPage()">Final Reveal </button>
+  <button onclick="nextPage()">Final Reveal ➝</button>
 </div>
 
 <div id="page5" class="screen final">
-  <h1> The Final Reveal </h1>
-  <h2>Happy 15th Birthday Aradhya </h2>
+  <h1>🎉 The Final Reveal 🎉</h1>
+  <h2>Happy 15th Birthday Aradhya 🎂</h2>
   <p>
     Stay happy, stay shining,<br>
-    and keep being my little Caffeine 
+    and keep being my little Caffeine 💕
   </p>
-  <button onclick="restart()">Replay Surprise </button>
+  <button onclick="restart()">Replay Surprise 🔁</button>
 </div>
 
 <!-- CONFETTI -->
