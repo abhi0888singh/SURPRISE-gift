@@ -9,13 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #0c0020;
-  animation: bgMove 20s infinite linear;
   background: linear-gradient(-45deg,#1c003d,#0c0020,#2d0040,#100010);
   background-size: 400% 400%;
+  animation: bgMove 20s infinite linear;
 }
 
-/* Background gradient movement */
 @keyframes bgMove {
   0% {background-position:0% 50%;}
   50% {background-position:100% 50%;}
@@ -30,32 +28,17 @@ body {
   max-width: 480px;
 }
 
-.screen.active {
-  display: block;
-}
+.screen.active { display: block; }
 
 /* Countdown */
-#countdown {
-  font-size: 20px;
-  margin: 15px 0;
-}
+#countdown { font-size: 20px; margin: 15px 0; }
 
-/* Gift animation */
-.gift {
-  font-size: 60px;
-  margin: 20px auto;
-  cursor: pointer;
-  animation: bounce 1.5s infinite;
-}
-.gift p {
-  font-size: 16px;
-  margin-top: 5px;
-}
+/* Gift image */
+.gift { margin: 20px auto; cursor: pointer; }
+.gift img.emoji { width: 80px; height: 80px; animation: bounce 1.5s infinite; }
+.gift p { font-size: 16px; margin-top: 5px; }
 
-@keyframes bounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
+@keyframes bounce { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-15px);} }
 
 /* Buttons */
 button {
@@ -69,11 +52,13 @@ button {
   font-weight: bold;
   width: 90%;
   max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-button:hover {
-  transform: scale(1.05);
-}
+button:hover { transform: scale(1.05); }
+button img.btn-icon { width: 20px; height: 20px; margin-right: 8px; }
 
 /* Hidden & stop */
 .hidden { display: none; }
@@ -82,16 +67,8 @@ button:hover {
 /* Final page styling */
 .final h2 { color: pink; font-size: 24px; }
 
-/* Confetti */
-#confetti {
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-}
+/* Confetti canvas full screen */
+#confetti { position: fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999; }
 
 /* Responsive */
 h1 { font-size: 22px; margin-bottom: 10px; }
